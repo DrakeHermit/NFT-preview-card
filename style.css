@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 :root {
   --background-color: #0D192C;
+  --heading-color: #fff;
+  --content-color: #8BACD9;
+  --card-bgcolor: hsl(216, 50%, 16%);
+  --line-color: hsl(215, 32%, 27%);
 }
 
 * {
@@ -10,4 +16,107 @@
 
 body {
   background-color: var(--background-color);
+  font-family: 'Outfit', sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-size: 22px;
+  color: var(--heading-color);
+  font-weight: 500;
+}
+
+.white {
+  color: var(--heading-color);
+}
+
+p {
+  color: var(--content-color);
+}
+
+hr {
+  border: 1px solid var(--line-color);
+  margin-bottom: 1rem;
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__card {
+  max-width: 327px;
+  background-color: var(--card-bgcolor);
+  padding: 24px 25px 24px 24px;
+  border-radius: 15px;
+}
+
+.main__card-image {
+  margin-bottom: 2rem;
+
+  img {
+    border-radius: 8px;
+    filter: brightness(0.8);
+  }
+}
+
+.main__card-content {
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.63;
+  }
+}
+
+.currency-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 1rem;
+
+  .eth {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+
+    img {
+      width: 11px;
+      height: 18px;
+    }
+  }
+
+  .days {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.author {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 15px;
+
+  img {
+    border: 1px solid var(--heading-color);
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+  }
 }

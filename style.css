@@ -6,7 +6,7 @@
   --content-color: #8BACD9;
   --card-bgcolor: hsl(216, 50%, 16%);
   --line-color: hsl(215, 32%, 27%);
-  --eth-color: hsl(178, 100%, 50%);
+  --cyan-color: hsl(178, 100%, 50%);
 }
 
 * {
@@ -31,8 +31,17 @@ h1 {
   font-weight: 500;
 }
 
+.hover {
+  display: none;
+}
+
 .white {
   color: var(--heading-color);
+}
+
+a {
+  text-decoration: none;
+  margin-left: 0.2rem;
 }
 
 p {
@@ -46,7 +55,7 @@ hr {
 
 .main {
   display: flex;
-  min-height: 100vh;
+  min-height: 100dvh;
   justify-content: center;
   align-items: center;
 }
@@ -92,7 +101,7 @@ hr {
     
     p {
       font-size: 15px;
-      color: var(--eth-color);
+      color: var(--cyan-color);
       font-weight: 600;
     }
 
@@ -129,5 +138,37 @@ hr {
     border-radius: 50%;
     width: 33px;
     height: 33px;
+  }
+}
+
+@media (width >= 760px) {
+  .main__card {
+    max-width: 350px;
+  }
+
+  .main__card-image {
+    position: relative;
+  }
+
+  .hover {
+    display: block;
+    position: absolute;
+    width: 48px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    z-index: -1;
+  }
+
+  .eth-icon:hover + .hover {
+   z-index: 1;
+  }
+
+  h1:hover {
+      color: var(--cyan-color);
+    }
+
+  .white:hover {
+    color: var(--cyan-color);
   }
 }

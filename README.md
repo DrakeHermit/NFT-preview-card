@@ -25,12 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/desktop-image-hover.png)
+![](./images/desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/DrakeHermit/NFT-preview-card)
+- Live Site URL: [Live Site](https://drakehermit-nft-preview-card.netlify.app)
 
 ## My process
 
@@ -39,13 +40,16 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Mobile-first workflow
 
 ### What I learned
 
+I learned how to animate image on hover even though it's not perfect it does work. Other than that this challenge wasn't all that hard.
 
 
 ### Continued development
 
+I would love to learn CSS animations in detail, I just scratched the surface of what's possible with this project.
 
 
 ## Author

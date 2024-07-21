@@ -161,10 +161,6 @@ hr {
     z-index: -1;
   }
 
-  .eth-icon {
-    transition: all 3s ease-in-out;
-  }
-
   .eth-icon:hover + .hover {
    z-index: 2;
   }

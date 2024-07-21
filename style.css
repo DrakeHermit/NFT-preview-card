@@ -148,6 +148,7 @@ hr {
 
   .main__card-image {
     position: relative;
+    cursor: pointer;
   }
 
   .hover {
@@ -160,8 +161,27 @@ hr {
     z-index: -1;
   }
 
+  .eth-icon {
+    transition: all 3s ease-in-out;
+  }
+
   .eth-icon:hover + .hover {
-   z-index: 1;
+   z-index: 2;
+  }
+
+  .eth-icon:hover ~ .overlay {
+    z-index: 1;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cyan-color);
+    top: 0;
+    opacity: 0.3;
+    z-index: -1;
+    border-radius: 8px;
   }
 
   h1:hover {

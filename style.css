@@ -33,10 +33,6 @@ h1 {
   transition: 0.3s ease;
 }
 
-.hover {
-  display: none;
-}
-
 .overlay {
   display: none;
 }

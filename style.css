@@ -21,7 +21,7 @@ body {
   font-family: 'Outfit', sans-serif;
 }
 
-img {
+img, svg {
   display: block;
   width: 100%;
 }
@@ -41,7 +41,7 @@ h1 {
   color: var(--heading-color);
 }
 
-a {
+a:not(.author) {
   text-decoration: none;
   margin-left: 0.2rem;
   transition: 0.3s ease;
@@ -71,8 +71,6 @@ hr {
 }
 
 .main__card-image {
-  margin-bottom: 1.5rem;
-
   img {
     border-radius: 8px;
     filter: brightness(0.8);
